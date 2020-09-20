@@ -74,3 +74,12 @@ https://docs.github.com/en/github/importing-your-projects-to-github/adding-an-ex
 ### Creating a new react app
 
 https://reactjs.org/docs/create-a-new-react-app.html
+
+### Add Typescript
+
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+
+### Fix problems when github repo is not empty
+
+git pull origin master --allow-unrelated-histories
+(this generates conflicts)
