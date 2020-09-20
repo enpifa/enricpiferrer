@@ -88,4 +88,6 @@ git pull origin master --allow-unrelated-histories
 
 Routing: add `react-router-dom` to project to be able to navigate between screens.
 
+Connect to DB. REST Api.
+
 Login/Register: probably add express, jwt.
