@@ -86,5 +86,6 @@ git pull origin master --allow-unrelated-histories
 
 ## Missing pieces
 
-Routing: add `react-router-dom` to project to be able to navigate between screens
-Login/Register
+Routing: add `react-router-dom` to project to be able to navigate between screens.
+
+Login/Register: probably add express, jwt.
