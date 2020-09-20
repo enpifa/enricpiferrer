@@ -83,3 +83,8 @@ npm install --save typescript @types/node @types/react @types/react-dom @types/j
 
 git pull origin master --allow-unrelated-histories
 (this generates conflicts)
+
+## Missing pieces
+
+Routing: add `react-router-dom` to project to be able to navigate between screens
+Login/Register
