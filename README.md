@@ -91,3 +91,13 @@ Routing: add `react-router-dom` to project to be able to navigate between screen
 Connect to DB. REST Api.
 
 Login/Register: probably add express, jwt.
+
+## PACKAGES
+
+cors -> allows to make calls from frontend to backend
+dotenv -> to hide credentials to db
+mysql
+express
+react-router-dom (had to run npm install @types/react-router-dom)
+
+in package.json, "proxy": "http://localhost:8080",

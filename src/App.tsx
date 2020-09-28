@@ -1,20 +1,38 @@
-import React from 'react';
-import './App.css';
-import TopBar from './components/TopBar/TopBar';
-import Content from './components/Content/Content';
+import React, {useEffect, useState} from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 
-function App() {
+import './App.css';
+import Content from './components/Content/Content';
+import Dashboard from './components/Dashboard/Dashboard';
+import Posts from './components/Posts/Posts';
+// import axios from 'axios';
+
+const App = () => {
+  // const {state, setState} = useState('');
+
+  // useEffect(() => {
+  //   fetchSomething();
+  // }, []);
+
+  // const fetchSomething = () => {
+  //   const result = axios.get('http://localhost:8080/ping');
+  //   console.log(result);
+  // }
+
   return (
     <div className="App">
-      <TopBar />
-      <Content />
-      {/* <header className="App-header">
-        <h1>Welcome, visitor</h1>
-        <h2>This is Enric's website</h2>
-        <h3>Sometimes known as Pifa</h3>
-        <p>This website is under construction. Please wait patiently until Enric find some time to work on its implementation. Meanwhile, you might want to check out my <i>LinkedIn</i> account <a href="https://www.linkedin.com/in/enric-piferrer-torres-47503447/">here</a>.</p>
-        <p>You can even check my fiance's <a href="http://foodfirstfuel.com">website</a>!</p>
-      </header> */}
+      <Router>
+        <Switch>
+          <Route path='/' exact component={Content} />
+          <Route path='/admin_dashboard' component={Dashboard} />
+          <Route path='/posts' component={Posts} />
+        </Switch>
+      </Router>
     </div>
   );
 }
